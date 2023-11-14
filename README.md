@@ -1,0 +1,2 @@
+# archnet
+auto install arch
