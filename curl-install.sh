@@ -19,4 +19,5 @@ echo "Executing ArchNet Script"
 
 cd $HOME/ArchNet
 
-exec ./archnet.sh
+chmod +x archnet.sh
+./archnet.sh
