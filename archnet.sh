@@ -11,6 +11,7 @@ mount /dev/vda2 /mnt
 mkdir /mnt/boot
 mount /dev/vda1 /mnt/boot
 
+echo "before pacstrap"
 pacstrap /mnt base base-devel linux linux-firmware vim
 
 genfstab -U /mnt >> /mnt/etc/fstab
