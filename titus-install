@@ -1,0 +1,18 @@
+/dev/vda
+stuck on grub
+grub>set root = (hd0,gpt1)
+grub>configfile /boot/grub/grub.cfg
+
+ls(hd0,gpt1) - not detected
+ls(hd0,gpt2) - fat label 'EFIBOOT' - 300 MiB
+ls(hd0,gpt3) - ext* label 'ROOT' 20 GiB
+
+ls (hd0,gpt3)/ = ls /
+
+gpt2 /grub/i386-pc/
+  boot.mod
+  boot.img
+  linux.mod
+
+set root = (hd0,gpt3)
+set prefix=(hd0,gpt2)/grub/
